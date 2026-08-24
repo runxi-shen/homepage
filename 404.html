@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>404 — Runxi Shen</title>
+<meta name="robots" content="noindex">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'><text y='14' font-size='14'>☾</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600;700&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="header-inner">
+    <a class="brand" href="./">runxi<span class="brand-cursor">_</span></a>
+    <button class="theme-toggle" type="button" aria-label="toggle light/dark theme" title="toggle light/dark">☾</button>
+  </div>
+</header>
+
+<main class="section" style="padding-top:6rem; text-align:center;">
+  <p class="eyebrow" style="justify-content:center;">404 · NOT FOUND</p>
+  <h1 style="font-size:clamp(2.2rem,6vw,3.4rem); margin-top:1rem;">This page drifted off the grid.</h1>
+  <p class="hero-sub" style="margin:1.2rem auto 2rem; max-width:30rem;">The link is broken, or the page never existed. Either way, the main event is still running.</p>
+  <a class="btn btn-primary" href="./">Back to homepage</a>
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <p>© 2026 Runxi Shen · MIT licensed</p>
+    <a class="to-top" href="./">home ↑</a>
+  </div>
+</footer>
+
+<script>
+(function () {
+  var root = document.documentElement;
+  try {
+    var stored = localStorage.getItem("runxi-theme");
+    if (stored === "dark" || stored === "light") root.setAttribute("data-theme", stored);
+  } catch (e) {}
+  document.querySelector(".theme-toggle").addEventListener("click", function () {
+    var next = root.getAttribute("data-theme") === "dark" ? "light" : "dark";
+    root.setAttribute("data-theme", next);
+    try { localStorage.setItem("runxi-theme", next); } catch (e) {}
+  });
+})();
+</script>
+</body>
+</html>
