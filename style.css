@@ -77,6 +77,21 @@ h1, h2, h3 { font-family: 'Space Grotesk', 'Inter', sans-serif; line-height: 1.1
 
 :focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 
+/* ── justified body text (aligned on both sides) ── */
+.hero-sub,
+.about-text p,
+.tl-desc,
+.card p,
+.section-note,
+.now-list li,
+.about-facts dd,
+.contact-lead {
+  text-align: justify;
+  text-justify: inter-word;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+}
+
 /* ── header ── */
 .site-header {
   position: sticky;
