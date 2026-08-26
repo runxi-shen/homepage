@@ -304,5 +304,12 @@
   </div>
 </footer>
 
-</body>
+<script>
+window.addEventListener('load', function(){ setTimeout(function(){
+ var el=document.querySelector('.hero-text h1'); var b=el.getBoundingClientRect();
+ var p=document.querySelector('.hero-photo').getBoundingClientRect();
+ var s=document.querySelector('.hero-stats').getBoundingClientRect();
+ document.title='PROBE vw='+document.documentElement.clientWidth+' h1x='+Math.round(b.x)+' statsx='+Math.round(s.x)+' photox='+Math.round(p.x)+' m64='+matchMedia('(max-width:64rem)').matches;
+},500);});
+</script></body>
 </html>

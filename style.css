@@ -511,11 +511,8 @@ h1, h2, h3 { font-family: 'Space Grotesk', 'Inter', sans-serif; line-height: 1.1
 
 /* ── responsive ── */
 @media (max-width: 64rem) {
-  .hero-inner { grid-template-columns: 1fr; gap: 2.5rem; padding-top: 4.5rem; text-align: center; }
-  .hero-text { display: flex; flex-direction: column; align-items: center; }
-  .hero-sub { margin-left: auto; margin-right: auto; }
-  .hero-stats { justify-content: center; }
-  .hero-photo { max-width: 300px; }
+  .hero-inner { grid-template-columns: 1fr; gap: 2.5rem; padding-top: 4.5rem; }
+  .hero-photo { max-width: 300px; justify-self: start; }
   .about-grid { grid-template-columns: 1fr; }
   .beyond { grid-template-columns: 1fr; }
 }
@@ -527,5 +524,4 @@ h1, h2, h3 { font-family: 'Space Grotesk', 'Inter', sans-serif; line-height: 1.1
   .theme-toggle { margin-left: auto; }
   .section { padding-top: 4rem; }
   .hero-stats { grid-template-columns: repeat(2, 1fr); gap: 1.4rem; }
-  .hero-cta { justify-content: center; }
 }
