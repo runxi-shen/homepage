@@ -15,7 +15,7 @@ audience: sticky navigation, headshot-led hero, plain-language sections.
 
 | File           | Purpose                                              |
 | -------------- | ---------------------------------------------------- |
-| `index.html`   | The whole site — hero, about, experience, research, papers, projects, contact |
+| `index.html`   | The whole site — hero, about, experience, research, papers, talks, projects, contact |
 | `style.css`    | Dark/light themes, layout, cyber details (grid, glow, ticker) |
 | `script.js`    | Theme toggle, scroll reveal, header elevation        |
 | `headshot.jpg` | Web-optimized headshot (900×900)                     |
