@@ -10,6 +10,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600;700&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+<script src="script.js" defer></script>
 </head>
 <body>
 
@@ -34,19 +35,5 @@
   </div>
 </footer>
 
-<script>
-(function () {
-  var root = document.documentElement;
-  try {
-    var stored = localStorage.getItem("runxi-theme");
-    if (stored === "dark" || stored === "light") root.setAttribute("data-theme", stored);
-  } catch (e) {}
-  document.querySelector(".theme-toggle").addEventListener("click", function () {
-    var next = root.getAttribute("data-theme") === "dark" ? "light" : "dark";
-    root.setAttribute("data-theme", next);
-    try { localStorage.setItem("runxi-theme", next); } catch (e) {}
-  });
-})();
-</script>
 </body>
 </html>
