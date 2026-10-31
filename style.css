@@ -453,6 +453,16 @@ h1, h2, h3 { font-family: 'Space Grotesk', 'Inter', sans-serif; line-height: 1.1
   background: var(--panel);
 }
 .talks-note { color: var(--muted); font-size: 0.9rem; margin: 0.9rem 0 2.2rem; }
+.talks-archive { margin: 0 0 1rem; }
+.talk-link.is-placeholder { color: var(--faint); cursor: default; }
+.talk-link.is-placeholder:hover { color: var(--faint); border-bottom: 0; }
+.talk-slides {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 0.8rem;
+  white-space: nowrap;
+  margin-left: 0.25rem;
+}
+.talk-slides:hover { color: var(--accent-ink); border-bottom: 1px solid var(--accent); }
 .talks-note a { border-bottom: 1px solid var(--accent); }
 .talks { list-style: none; }
 .talks li {
