@@ -81,7 +81,6 @@ h1, h2, h3 { font-family: 'Space Grotesk', 'Inter', sans-serif; line-height: 1.1
 .hero-tagline,
 .hero-sub,
 .about-text p,
-.tl-desc,
 .card p,
 .section-note,
 .now-list li,
@@ -349,41 +348,6 @@ h1, h2, h3 { font-family: 'Space Grotesk', 'Inter', sans-serif; line-height: 1.1
 .about-facts dt { font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; letter-spacing: 0.1em; text-transform: uppercase; color: var(--faint); padding-top: 0.1rem; }
 .about-facts dd { font-size: 0.92rem; }
 .about-facts dd a { border-bottom: 1px solid var(--accent); }
-
-/* ── timeline ── */
-.timeline { list-style: none; position: relative; padding-left: 1.5rem; }
-.timeline::before {
-  content: "";
-  position: absolute;
-  left: 0; top: 0.4rem; bottom: 0.4rem;
-  width: 2px;
-  background: linear-gradient(var(--accent), var(--line));
-}
-.tl-item { position: relative; padding: 0 0 2.4rem 1.8rem; }
-.tl-item::before {
-  content: "";
-  position: absolute;
-  left: -1.5rem; top: 0.45rem;
-  width: 10px; height: 10px;
-  border-radius: 50%;
-  background: var(--accent);
-  box-shadow: 0 0 0 3px var(--bg), 0 0 10px var(--glow);
-}
-.tl-years {
-  font-family: 'JetBrains Mono', monospace;
-  font-size: 0.78rem;
-  letter-spacing: 0.08em;
-  color: var(--accent);
-  background: var(--chip-bg);
-  border: 1px solid var(--line);
-  border-radius: 6px;
-  padding: 0.2rem 0.6rem;
-  display: inline-block;
-  margin-bottom: 0.55rem;
-}
-.tl-body h3 { font-size: 1.22rem; }
-.tl-org { color: var(--accent-2); font-weight: 600; font-size: 0.95rem; margin: 0.15rem 0 0.35rem; }
-.tl-desc { color: var(--muted); font-size: 0.95rem; max-width: 44rem; }
 
 /* ── cards ── */
 .card-grid {
